@@ -1,14 +1,22 @@
-Se você deseja verificar o histórico de alterações, as mensagens de commits, o nome do autor daquele commit e outras informações sobre o projeto, existe um comando do git que pode te ajudar. Este comando é o git log.
+# GII
 
-Podemos visualizar todos os commits, um em cada linha com o comando:
+### `COMANDOS`
 
+
+#### Verificar o histórico de alterações
+```
+git log
+```
+
+#### Visualizar os commits (um em cada linha)
+```
 git log --oneline
-
-Se, em vez de menos informações, quisermos ver mais como as alterações do commit, podemos usar:
+```
+#### Visualizar mais como as alterações do commit
 
 git log -p
 
-Também podemos pesquisar as informações do autor daquele commit com o comando:
+#### Pesquisar as informações do autor
 
 git log --author="user_name"
 
