@@ -1,4 +1,4 @@
-# GII
+# GIT
 
 ### `COMANDOS`
 
@@ -13,48 +13,57 @@ git log
 git log --oneline
 ```
 #### Visualizar mais como as alterações do commit
-
+```
 git log -p
-
+```
 #### Pesquisar as informações do autor
-
+```
 git log --author="user_name"
-
-E pesquisar informações por data:
-
-git log --since=1.month.ago --until=1.day.agoCOPIAR CÓDIGO
-No comando acima, estamos buscando as informações do commit desde um mês atrás até um dia atrás.
-
-Você também pode formatar a visualização das informações de commit com o comando:
+```
+#### Pesquisar informações por data
+> Apresenta as informações do commit desde um mês atrás até um dia atrás.
+```
+git log --since=1.month.ago --until=1.day.ago
+```
+#### Formatar a visualização das informações de commit
+> Traz o hash seguido da mensagem de commit.
+```
 git log --pretty="format:%h %s"
+```
 
-Este traz o hash seguido da mensagem de commit. Para saber mais formas de exibir as informações de commit, aqui tem uma lista de maneiras que você pode fazer isso.
-
-https://devhints.io/git-log
-
-Com o git clone você também pode clonar o repositório para uma pasta específica:
-
+#### Clonar o repositório para uma pasta específica
+> O repositório localizado em repositorio é clonado para uma pasta chamada meu-projeto-clone.
+```
 git clone <repositorio> <meu-projeto-clone>
-O repositório localizado em repositorio é clonado para uma pasta chamada meu-projeto-clone.
+```
 
-Você também pode configurar o git clone e clonar o repositório a partir de uma branch específica, diferente da original dessa forma:
-
+#### Clonar o repositório a partir de uma branch específica
+```
 git clone -branch new_feature <repositorio>
-O exemplo acima clonaria apenas a branch new_feature de repositorio. Outras configurações de opções do git clone você pode consultar https://git-scm.com/docs/git-clone
+```
 
-Para verificar as modificações realizadas:
+#### Listar todos os arquivos que foram modificados.
+```
+git status
+```
+#### Adicionar Alterações em um arquivo
+```
+git add nome-do-arquivo
+```
+#### Adicionar todas as modificações realizadas de uma só vez
+```
+git add .
+```
 
-Utilize o comando git status, ele serve para listar todos os arquivos que foram modificados.
-2 - Para adicionar as mudanças ao seu repositório local:
+#### Capturar e salvar o estado atual do repositório
+```
+git commit.
+```
 
-Para adicionar todas as modificações realizadas de uma só vez, é necessário usar git add . (git add e um ponto) e, para adicionar as mudanças em algum arquivo específico, usa-se git add nome-do-arquivo-alterado.
-3 - Para salvar as alterações:
-
-Utilize o comando git commit, ele é usado quando queremos capturar e salvar o estado atual do repositório.
-4 - Para enviar as modificações ao repositório remoto:
-
-Utilize o comando git push, ele é utilizado para envio das alterações gravadas no diretório local para o repositório remoto.
-
+#### Enviar as modificações ao repositório remoto
+```
+git push [nome_servidor] [branch]
+```
 
 git restore
 
@@ -221,3 +230,9 @@ Execute o comando git push local master para enviar as suas alterações;
 8) Execute o comando git push origin v0.1.0 para enviar esta tag para o GitHub;
 
 9) Abra a página do repositório do GitHub que você criou e confira a aba de Releases.
+----------------------------------------------------------------------------------------
+ **LINKS**
+  ```
+  https://devhints.io/git-log
+  https://git-scm.com/docs/git-clone
+  ```
