@@ -1,5 +1,3 @@
-# GIT
-
 ### `COMANDOS`
 
 
@@ -34,12 +32,12 @@ git log --pretty="format:%h %s"
 #### Clonar o repositório para uma pasta específica
 > O repositório localizado em repositorio é clonado para uma pasta chamada meu-projeto-clone.
 ```
-git clone <repositorio> <meu-projeto-clone>
+git clone [repositorio] [meu-projeto-clone]
 ```
 
 #### Clonar o repositório a partir de uma branch específica
 ```
-git clone -branch new_feature <repositorio>
+git clone -b [nome_branch] [repositorio_clonado]
 ```
 
 #### Listar todos os arquivos que foram modificados.
@@ -48,7 +46,7 @@ git status
 ```
 #### Adicionar Alterações em um arquivo
 ```
-git add nome-do-arquivo
+git add [nome_do_arquivo]
 ```
 #### Adicionar todas as modificações realizadas de uma só vez
 ```
@@ -62,107 +60,43 @@ git commit.
 
 #### Enviar as modificações ao repositório remoto
 ```
-git push [nome_servidor] [branch]
+git push [nome_servidor] [nome_ramificação]
 ```
-
-git restore
-
-Aprendemos a trabalhar com essa parte de restauração de arquivos e do projeto, voltando para um estado anterior através do git restore;
+#### Restaurar arquivos, voltando para um estado anterior
+```
+git restore [nome_do_arquivo]
+```
 git add
 
-Aprendemos a adicionar os arquivos que queremos para o próximo commit através do git add.
+#### Criar uma branch
+```
+git branch [nova_branch]
+```
+#### Mudar para uma branch
+```
+git checkout [nome_da_branch]
+```
+#### Criar uma nova branch e mudar automaticamente
+```
+git checkout -b [nome_da_branch]
+```
+#### Mesclar as alterações
+```
+git merge [nome_da_branch
+```
+#### Verificar o histórico de forma gráfica
+```
+git log --graph
+```
+#### Reescrevendo as alterações 
+```
+git rebase titulo;
+```
 
-
-
-Caminho 1: criar uma branch para cada aula do curso com o comando:
-git checkout -b nome-da-branchCOPIAR CÓDIGO
-Com esse comando, você cria uma nova branch e muda automaticamente para ela para dar início ao desenvolvimento.
-
-Caminho 2: criar uma branch para cada aula do curso com o comando:
-git branch nome-da-branchCOPIAR CÓDIGO
-Essa é outra forma de criar uma branch. Nesse caso, ela é criada, mas não há a mudança automática para esta nova ramificação. Para isso, você pode usar o comando git switch nome-da-branch.
-
-https://guilhermeonrails.github.io/manual-do-git-e-github/
-
-1) Execute o comando git branch e veja que apenas a branch master existe no seu repositório;
-
-2) Execute o comando git branch titulo e logo após execute o comando git branch. Veja que uma nova branch foi criada;
-
-3) Agora, para começar a trabalhar nesta branch, digite git checkout titulo;
-
-4) Execute novamente git branch e confira que agora você está na branch chamado titulo;
-
-5) Altere o título da página index.html para "Cursos de DevOps da Alura";
-
-6) Adicione as alterações com git add index.html;
-
-7) Faça o commit, com git commit -m "Alterando título da página";
-
-8) Execute o comando git log e confira o novo commit;
-
-9) Altere o título da página para "Lista de cursos de DevOps da Alura";
-
-10) Repita os passos 6 e 7, para adicionar um novo commit, alterando a mensagem;
-
-11) Repita o passo 8 para conferir o novo commit;
-
-12) Execute o comando git checkout master para voltar à linha de desenvolvimento master;
-
-13) Execute git log para conferir que os últimos dois commits não estão lá. Confira se o conteúdo do seu arquivo também voltou ao seu estado original;
-
-14) Na pasta criada para representar o trabalho de outra pessoa na aula anterior:
-
-Execute git checkout -b lista para criar uma nova branch, chamada lista e passar a trabalhar nela;
-Adicione o curso de "Kubernetes" na lista;
-Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
-Execute o comando git checkout master para voltar à linha de desenvolvimento master;
-15) Volte para a pasta que representa o seu próprio trabalho;
-
-16) Altere o nome do curso de Docker para "Docker: Criando containers sem dor de cabeça";
-
-17) Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
-
-18) Execute o comando git merge titulo para trazer o trabalho feito na branch titulo para a branch master;
-
-19) Execute o comando git log --graph para ver as linhas de desenvolvimento (branches);
-
-20) Execute git checkout titulo para trabalhar na branch chamada titulo;
-
-21) Altere o título para ter a palavra "Cursos" com letra maiúscula;
-
-22) Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
-
-23) Execute o comando git checkout master para voltar à linha de desenvolvimento master;
-
-24) Execute o comando git rebase titulo;
-
-25) Execute o comando git log e confira que o commit foi adicionado antes do commit realizado diretamente na branch master;
-
-26) Execute o comando git push local master para enviar suas alterações para o repositório remoto que criamos na última aula;
-
-27) Na pasta criada para representar o trabalho de outra pessoa na aula anterior:
-
-Execute o comando git pull local master para baixar as alterações que você já realizou;
-Execute o comando git checkout lista para continuar trabalhando na lista de cursos;
-Altere o nome do curso de Docker para "Curso de Docker: Criando containers sem dor de cabeça";
-Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
-Execute o comando git checkout master para voltar à linha de desenvolvimento master;
-Tente juntar seu trabalho com git merge lista;
-Veja que há conflitos. Corrija-os, deixando apenas a linha com o nome correto do curso;
-Execute o comando git add index.html para informar que os conflitos neste arquivo foram corrigidos;
-Execute o comando git commit para que o Git finalize o merge;
-Execute o comando git push local master para enviar as suas alterações;
-28) Volte para a pasta que representa o seu próprio trabalho;
-
-29) Altere o nome do curso de Vagrant para "Vagrant: Gerenciando máquinas virtuais";
-
-30) Repita os passos 6 e 7 para adicionar um novo commit, alterando a mensagem;
-
-31) Tente executar o comando git push local master. Veja a falha;
-
-32) Execute o comando git pull local master para trazer as alterações da outra pessoa;
-
-33) Agora sim, execute o comando git push local master para enviar as alterações.
+#### Baixar as alterações realizadas
+```
+git pull [nome_do_repositório] [nome_da_ramificação]
+```
 
 
 
@@ -235,4 +169,5 @@ Execute o comando git push local master para enviar as suas alterações;
   ```
   https://devhints.io/git-log
   https://git-scm.com/docs/git-clone
+  https://guilhermeonrails.github.io/manual-do-git-e-github/
   ```
