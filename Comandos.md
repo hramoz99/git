@@ -30,9 +30,8 @@ git log --pretty="format:%h %s"
 ```
 
 #### Clonar o repositório para uma pasta específica
-> O repositório localizado em repositorio é clonado para uma pasta chamada meu-projeto-clone.
 ```
-git clone [repositorio] [meu-projeto-clone]
+git clone [repositorio_clonado] [meu-projeto-clone]
 ```
 
 #### Clonar o repositório a partir de uma branch específica
