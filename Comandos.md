@@ -123,7 +123,7 @@ git rebase titulo;
 git pull [nome_do_repositório] [nome_da_ramificação]
 ```
 
-#### Desfazer alterações em um repositório, controlar o estado do índice e do diretório
+#### Desfazer as alterações em um repositório, controlar o estado do diretório e índice
 > Move a HEAD para um commit específico e redefine o índice, mas mantém as alterações nos arquivos.
 ```
 git reset 
