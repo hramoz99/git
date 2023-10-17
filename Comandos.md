@@ -1,6 +1,11 @@
 ### `COMANDOS`
 
 
+#### Iniciar um novo repositório Git
+```
+git init
+```
+
 #### Clonar o repositório para uma pasta específica
 ```
 git clone [repositorio_clonado] [meu-projeto-clone]
@@ -9,11 +14,6 @@ git clone [repositorio_clonado] [meu-projeto-clone]
 #### Clonar o repositório a partir de uma branch específica
 ```
 git clone -b [nome_branch] [repositorio_clonado]
-```
-
-#### Iniciar um novo repositório Git
-```
-git init
 ```
 
 #### Listar todos os arquivos que foram modificados.
