@@ -157,13 +157,13 @@ git stash pop
 git checkout {hash}
 ```
 
-#### Visualizar as diferenças entre as alterações no seu diretório de trabalho e as registradas no índice ou as entre commits no histórico
+#### Visualizar as diferenças entre as alterações no seu diretório de trabalho
 ```
 git diff [origem]} [destino]
 ```
 
 #### Criar ou Remover tags em um repositório
-> As tags são usadas para marcar pontos específicos no histórico do repositório, tornando mais fácil referenciar e identificar esses pontos.
+> As tags são usadas para marcar pontos específicos no histórico do repositório.
 ```
 git tag -a v0.1.0 para criar uma tag no seu código;
 ```
