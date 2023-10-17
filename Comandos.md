@@ -123,7 +123,7 @@ git rebase titulo;
 git pull [nome_do_repositório] [nome_da_ramificação]
 ```
 
-#### Desfazer as alterações em um repositório, controlar o estado do diretório e índice
+#### Desfazer as alterações em um repositório, controlar o estado do índice
 > Move a HEAD para um commit específico e redefine o índice, mas mantém as alterações nos arquivos.
 ```
 git reset 
@@ -145,7 +145,6 @@ git revert {hash}
 #### Salvar temporariamente as alterações locais em um repositório Git
 ```
 git stash
-
 ```
 
 #### Trazer as alterações salvas no stash
