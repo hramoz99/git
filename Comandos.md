@@ -206,7 +206,7 @@ git tag <nome-da-tag> <hash-do-commit>
 ```
 
 ----------------------------------------------------------------------------------------
- **LINKS**
+ ### `LINKS`
   ```
   https://devhints.io/git-log
   https://git-scm.com/docs/git-clone
