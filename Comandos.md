@@ -123,7 +123,7 @@ git reset <opção> <commit>
 ```
 
 ```
-<> Descartar completamente o commit mais recente, incluindo as alterações no diretório de trabalho
+<> Descartar completamente o commit mais recente, incluindo as alterações no diretório
 
 git reset --hard HEAD~1
 ```
