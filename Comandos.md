@@ -174,7 +174,6 @@ git bisect start
 <> Indicar o estado: bom ou ruim
 
 git bisect good [commit] 
-
 git bisect bad [commit] 
 ```
 
