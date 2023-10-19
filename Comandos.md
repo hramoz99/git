@@ -108,6 +108,31 @@ git branch -d {nome_branch} remove uma branch que já tem seu trabalho unido à 
 git branch -D {nome_branch}
 ```
 
+#### Encontrar no código alguma alteração ou bug introduzido
+```
+Iniciar o processo de bisect
+git bisect start
+
+Indicar o bom e o ruim:
+git bisect good [commit] (Indica um commit bom.)
+git bisect bad [commit] (Indica um commit ruim.)
+
+
+Repetir até encontrar o commit problemático:
+
+Finalizar o processo de bisect:
+git bisect reset
+```
+
+```
+git cherry-pick <hash-do-commit>
+```
+
+#### Visualizar quem é o responsável por cada linha no código
+```
+git blame
+```
+
 #### Mesclar as alterações
 ```
 git merge [nome_da_branch
