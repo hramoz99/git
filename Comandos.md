@@ -201,7 +201,6 @@ git stash pop
 ```
 
 #### Criar ou Remover tags em um repositório
-> As tags são usadas para marcar pontos específicos no histórico do repositório.
 ```
 git tag <nome-da-tag> <hash-do-commit>
 ```
