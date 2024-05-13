@@ -1,10 +1,10 @@
-# Guia de Comandos Git
+# Introdução ao Git 
 
 Este repositório contém uma lista de comandos úteis para trabalhar com o Git, um sistema de controle de versão distribuído amplamente utilizado.
 
-## Introdução ao Git
+## Guia de Comandos Git
 
-O Git é uma ferramenta poderosa para o controle de versão de código fonte e colaboração em projetos de software. Abaixo estão alguns comandos essenciais do Git:
+Abaixo estão alguns comandos essenciais do Git:
 
 ### Configuração Inicial
 
@@ -35,18 +35,4 @@ O Git é uma ferramenta poderosa para o controle de versão de código fonte e c
 - `git push <remoto> <ramificação>`: Envia alterações locais para um repositório remoto.
 - `git pull <remoto> <ramificação>`: Atualiza o repositório local com as alterações do remoto.
 - `git fetch <remoto>`: Baixa todas as ramificações do repositório remoto.
-
-### Desfazendo Alterações
-
-- `git reset <arquivo>`: Remove o arquivo do índice, mas mantém as alterações no diretório de trabalho.
-- `git reset --hard HEAD`: Desfaz todas as alterações locais e retorna ao estado do último commit.
-- `git revert <commit>`: Desfaz o commit especificado, criando um novo commit com as alterações revertidas.
-
-## Contribuição
-
-Sinta-se à vontade para contribuir com novos comandos, exemplos ou correções através de pull requests.
-
-## Licença
-
-Este repositório é distribuído sob a licença MIT. Consulte o arquivo `LICENSE` para obter mais detalhes.
 
