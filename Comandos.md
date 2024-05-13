@@ -109,6 +109,11 @@ git push <nome-servidor> <nome-ramificação>
 git pull <nome-do-repositório> <nome-da-ramificação>
 ```
 
+#### Baixar todas as ramificações do repositório remoto
+```
+git fetch <remoto>
+```
+
 #### Desfazer as alterações em um arquivo e controlar o estado do índice
 ```
 <> Desfazer o commit mais recente e manter as alterações na área de preparação
