@@ -29,7 +29,7 @@ Abaixo estão alguns comandos essenciais do Git:
 - `git checkout <nome>`: Muda para a ramificação especificada.
 - `git merge <ramificação>`: Mescla uma ramificação à ramificação atual.
 
-### Trabalhando com Remotos
+### Trabalhando com Repositórios Remotos
 
 - `git remote add <nome> <url>`: Adiciona um novo repositório remoto.
 - `git push <remoto> <ramificação>`: Envia alterações locais para um repositório remoto.
